@@ -134,7 +134,7 @@ Future _runDelinter(
 
   lintOptions.packageConfigPath = packageConfigFile;
 
-  final List<File> filesToLint = [];
+  final filesToLint = <File>[];
   for (final path in options.rest) {
     filesToLint.addAll(
         analyzer_io.collectFiles(path).where((f) => f.path.endsWith('.dart')));

@@ -4,7 +4,7 @@ import 'dart:io';
 
 import 'package:dart_delinter/src/entities.dart';
 
-JsonDecoder _decoder = const JsonDecoder();
+final _decoder = const JsonDecoder();
 
 bool _isBalanced(String jsons) =>
     jsons.split('{').length == jsons.split('}').length;
